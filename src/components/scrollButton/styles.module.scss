@@ -1,0 +1,21 @@
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  svg {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #646262;
+    }
+  }
+
+  @media (max-width: 768px) {
+  }
+}
