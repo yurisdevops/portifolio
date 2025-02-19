@@ -36,6 +36,11 @@ export function Header() {
             </a>
           </li>
           <li>
+            <a href="#technology" onClick={toggleMenu}>
+              Tecnologias
+            </a>
+          </li>
+          <li>
             <a href="#projects" onClick={toggleMenu}>
               Projetos
             </a>

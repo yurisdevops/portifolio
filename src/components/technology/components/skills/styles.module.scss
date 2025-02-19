@@ -1,0 +1,17 @@
+.skills {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
+  div img {
+    width: 35px;
+  }
+
+  div p {
+    font-weight: bold;
+  }
+
+  div:hover {
+    transform: scale(1.05);
+  }
+}

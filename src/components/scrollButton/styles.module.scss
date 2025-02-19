@@ -4,8 +4,10 @@
   right: 20px;
   color: #fff;
   border: none;
+
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 99;
 
   svg {
     color: #000;
