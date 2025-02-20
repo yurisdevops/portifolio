@@ -1,18 +1,35 @@
 import styles from "./styles.module.scss";
 import profile from "../../assets/profile.jpg";
+import * as motion from "motion/react-client";
 
 export function About() {
   return (
-    <section id="about" className={styles.about}>
+    <motion.section
+      id="about"
+      className={styles.about}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <h1 className={styles.header}>
         Sobre<p className={styles.blink}>|</p>
       </h1>
 
       <div className={styles.grid}>
-        <div className={styles.img}>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className={styles.img}
+        >
           <img src={profile} alt="" />
-        </div>
-        <div className={styles.text}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className={styles.text}
+        >
           {" "}
           <p>
             {" "}
@@ -39,8 +56,8 @@ export function About() {
               Node.js, MongoDB, Firebase e entre outras.{" "}
             </strong>{" "}
           </p>{" "}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
