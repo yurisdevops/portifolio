@@ -13,6 +13,7 @@ import projeto8 from "../../assets/images/projeto8.png";
 import projeto9 from "../../assets/images/projeto9.png";
 import projeto10 from "../../assets/images/projeto10.png";
 import projeto11 from "../../assets/images/projeto11.png";
+import projeto12 from "../../assets/images/projeto12.png";
 import dev from "../../assets/images/dev.jpg";
 
 const projectCards = [
@@ -24,6 +25,15 @@ const projectCards = [
       "React, Next.Js, TypeScript, Sass, NodeJs, Express, PostgreSQL",
 
     repository: "https://devyuri.vercel.app/",
+    preview: "https://devyuri.vercel.app/",
+  },
+  {
+    title: "Portifolio",
+
+    image: projeto12,
+    technologies: "Vite, React, JavaScript, Sass.",
+
+    repository: "https://github.com/yurisdevops/portifolio",
     preview: "https://devyuri.vercel.app/",
   },
   {

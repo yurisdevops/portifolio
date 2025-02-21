@@ -40,7 +40,6 @@
   align-items: center;
   font-size: 44px;
   display: flex;
-  margin-bottom: 100px;
 
   strong {
     margin: 0 6px;
@@ -48,6 +47,7 @@
 
   @media (max-width: 1600px) {
     font-size: 28px;
+    margin-top: 50px;
   }
 
   @media (max-width: 1024px) {
