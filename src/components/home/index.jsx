@@ -19,14 +19,14 @@ export function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={40} color="#000" />
+            <FaLinkedin size={60} color="#000" />
           </a>
           <a
             href="https://github.com/yurisdevops"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithubSquare size={40} color="#000" />
+            <FaGithubSquare size={60} color="#000" />
           </a>
         </div>
       </div>

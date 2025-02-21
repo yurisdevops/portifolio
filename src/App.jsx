@@ -6,6 +6,7 @@ import { About } from "./components/about";
 import { ScrollToTopButton } from "./components/scrollButton";
 import { Technology } from "./components/technology";
 import { Projects } from "./components/projects";
+import { Contact } from "./components/contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Technology />
       <Projects />
+      <Contact />
       <ScrollToTopButton />
     </main>
   );

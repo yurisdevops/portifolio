@@ -17,55 +17,55 @@ export function Technologies() {
   return (
     <div className={styles.technologies}>
       <div>
-        <FaReact size={30} color="#000" />
+        <FaReact size={60} color="#000" />
         <p>React</p>
       </div>
       <div>
-        <SiVite size={30} color="#000" />
+        <SiVite size={60} color="#000" />
         <p>Vite</p>
       </div>
       <div>
-        <FaJsSquare size={30} color="#000" />
+        <FaJsSquare size={60} color="#000" />
         <p>JavaScript</p>
       </div>
       <div>
-        <FaNode size={30} color="#000" />
+        <FaNode size={60} color="#000" />
         <p>Node.js</p>
       </div>
       <div>
-        <SiTypescript size={30} color="#000" />
+        <SiTypescript size={60} color="#000" />
         <p>TypeScript</p>
       </div>
       <div>
-        <RiFirebaseFill size={30} color="#000" />
+        <RiFirebaseFill size={60} color="#000" />
         <p>Firebase</p>
       </div>
       <div>
-        <SiPrisma size={30} color="#000" />
+        <SiPrisma size={60} color="#000" />
         <p>Prisma</p>
       </div>
       <div>
-        <SiMongodb size={30} color="#000" />
+        <SiMongodb size={60} color="#000" />
         <p>MongoDB</p>
       </div>
       <div>
-        <BiLogoPostgresql size={30} color="#000" />
+        <BiLogoPostgresql size={60} color="#000" />
         <p>PostgreSQL</p>
       </div>
       <div>
-        <RiNextjsFill size={30} color="#000" />
+        <RiNextjsFill size={60} color="#000" />
         <p>Next.js</p>
       </div>
       <div>
-        <FaSass size={30} color="#000" />
+        <FaSass size={60} color="#000" />
         <p>Sass</p>
       </div>
       <div>
-        <FaGitAlt size={30} color="#000" />
+        <FaGitAlt size={60} color="#000" />
         <p>Git</p>
       </div>
       <div>
-        <FaGithubSquare size={30} color="#000" />
+        <FaGithubSquare size={60} color="#000" />
         <p>GitHub</p>
       </div>
     </div>

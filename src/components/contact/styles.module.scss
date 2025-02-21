@@ -1,0 +1,40 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.header {
+    align-items: center;
+    font-size: 44px;
+    display: flex;
+  
+    @media (max-width: 1600px) {
+      font-size: 36px;
+    }
+  
+    @media (max-width: 1024px) {
+      font-size: 32px;
+      gap: 1px;
+    }
+  }
+  
+  .blink {
+    animation: blink 1s infinite;
+  
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  

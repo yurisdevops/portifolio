@@ -5,9 +5,17 @@
   width: 250px;
   justify-content: center;
   white-space: nowrap;
-  margin-left: 100px;
+  margin-left: 80px;
   color: #293541;
   text-align: center;
+
+  @media (max-width: 1600px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 70px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;

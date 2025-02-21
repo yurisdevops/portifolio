@@ -4,7 +4,7 @@
   right: 20px;
   color: #fff;
   border: none;
-
+  background: none;
   cursor: pointer;
   transition: background-color 0.3s;
   z-index: 99;
@@ -18,6 +18,27 @@
     }
   }
 
+  @media (max-width: 1600px) {
+    bottom: 30px;
+    right: 30px;
+    svg {
+      color: #333;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    bottom: 25px;
+    right: 25px;
+    svg {
+      color: #666;
+    }
+  }
+
   @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    svg {
+      color: #000;
+    }
   }
 }

@@ -11,6 +11,7 @@
   align-self: center;
   text-align: center;
   gap: 120px;
+
   h1 {
     font-size: 70px;
     font-weight: bold;
@@ -22,6 +23,18 @@
     align-self: center;
     justify-content: center;
     gap: 20px;
+  }
+
+  @media (max-width: 1600px) {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 50px;
+    }
   }
 
   @media (max-width: 768px) {

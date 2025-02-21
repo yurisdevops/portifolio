@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 
   div img {
-    width: 35px;
+    width: 90px;
   }
 
   div p {
@@ -13,5 +13,29 @@
 
   div:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 1600px) {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+    div img {
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+
+    div img {
+      width: 70px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+
+    div img {
+      width: 60px;
+    }
   }
 }

@@ -6,6 +6,14 @@
   align-items: center;
   gap: 80px;
 
+  @media (max-width: 1600px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 1024px) {
+    gap: 40px;
+  }
+
   @media (max-width: 768px) {
     gap: 40px;
     height: auto;
@@ -15,21 +23,28 @@
 .grid {
   max-width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 0px 40px;
   align-items: center;
+  gap: 20px;
+
+  @media (max-width: 1600px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
 }
 
 .img {
-  width: 80%;
-
   img {
-    width: 400px;
+    width: 80%;
     border-radius: 50%;
     opacity: 87%;
     transition: all 0.3s ease-in-out;
@@ -39,8 +54,23 @@
     }
   }
 
+  @media (max-width: 1600px) {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+
+    img {
+      width: 80%;
+    }
+  }
+
   @media (max-width: 768px) {
     width: 100%;
+
     img {
       width: 100%;
     }
@@ -50,15 +80,39 @@
 .text {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+
   p {
-    font-size: 18px;
+    font-size: 32px;
 
     strong {
-      font-size: 20px;
+      font-size: 33px;
       color: #ff8c00;
     }
   }
+
+  @media (max-width: 1600px) {
+    p {
+      font-size: 20px;
+
+      strong {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    gap: 15px;
+
+    p {
+      font-size: 26px;
+
+      strong {
+        font-size: 27px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     p {
       font-size: 16px;
@@ -71,14 +125,23 @@
 }
 
 .header {
-  display: flex;
   align-items: center;
-  font-size: 32px;
-  gap: 1px;
+  font-size: 44px;
+  display: flex;
+
+  @media (max-width: 1600px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    gap: 1px;
+  }
 }
 
 .blink {
   animation: blink 1s infinite;
+
   @keyframes blink {
     0% {
       opacity: 1;
