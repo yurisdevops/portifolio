@@ -23,8 +23,8 @@ const projectCards = [
     technologies:
       "React, Next.Js, TypeScript, Sass, NodeJs, Express, PostgreSQL",
 
-    repository: "https://github.com/yurisdevops/dalygames",
-    preview: "https://dalygames-pearl.vercel.app/",
+    repository: "https://devyuri.vercel.app/",
+    preview: "https://devyuri.vercel.app/",
   },
   {
     title: "Desafio (teste)",
