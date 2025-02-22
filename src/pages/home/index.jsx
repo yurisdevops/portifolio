@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import TextAnimation from "../textAnimation";
+import TextAnimation from "../../components/textAnimation";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 

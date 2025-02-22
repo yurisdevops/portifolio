@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/logos/profile.jpg";
 import * as motion from "motion/react-client";
+import { Title } from "../../components/title";
 
 export function About() {
   return (
@@ -11,9 +12,7 @@ export function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className={styles.header}>
-        Sobre<p className={styles.blink}>|</p>
-      </h1>
+      <Title title={"Sobre"}/>
 
       <div className={styles.grid}>
         <motion.div

@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import { Technologies } from "./components/technologies";
 import { Skills } from "./components/skills";
 import * as motion from "motion/react-client";
+import { Title } from "../../components/title";
 export function Technology() {
   return (
     <motion.section
@@ -11,10 +12,7 @@ export function Technology() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className={styles.header}>
-        Tecnologias<strong> & </strong> Habilidades
-        <p className={styles.blink}>|</p>
-      </h1>
+      <Title title={"Tecnologias & Habilidades"}/>
       <div className={styles.grid}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

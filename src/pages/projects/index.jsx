@@ -15,6 +15,7 @@ import projeto10 from "../../assets/images/projeto10.png";
 import projeto11 from "../../assets/images/projeto11.png";
 import projeto12 from "../../assets/images/projeto12.png";
 import dev from "../../assets/images/dev.jpg";
+import { Title } from "../../components/title";
 
 const projectCards = [
   {
@@ -137,9 +138,7 @@ export function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className={styles.header}>
-        Projetos<p className={styles.blink}>|</p>
-      </h1>
+      <Title title="Projetos"/>
       <div className={styles.cardsContainer}>
         {projectCards.map((card) => (
           <ProjectCard key={card.title} {...card} />

@@ -1,6 +1,6 @@
 import { useState } from "react"; // Importe o useState para controlar o estado do menu
 import { TiThMenuOutline } from "react-icons/ti"; // Importe o ícone
-import logo from "../../assets/logo.png";
+import logo from "../../assets//logos/logo.png";
 import styles from "./styles.module.scss";
 
 export function Header() {

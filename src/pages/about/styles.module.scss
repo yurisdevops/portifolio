@@ -87,7 +87,7 @@
 
     strong {
       font-size: 33px;
-      color: #ff8c00;
+      color: var(--color-orange);
     }
   }
 
@@ -120,38 +120,6 @@
       strong {
         font-size: 16px;
       }
-    }
-  }
-}
-
-.header {
-  align-items: center;
-  font-size: 44px;
-  display: flex;
-
-  @media (max-width: 1600px) {
-    font-size: 36px;
-    margin-top: 30px;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 32px;
-    gap: 1px;
-  }
-}
-
-.blink {
-  animation: blink 1s infinite;
-
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
     }
   }
 }

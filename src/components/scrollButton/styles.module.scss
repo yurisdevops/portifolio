@@ -2,19 +2,17 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #fff;
   border: none;
   background: none;
   cursor: pointer;
-  transition: background-color 0.3s;
   z-index: 99;
 
   svg {
-    color: #000;
+    color: var(--color-black);
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: #646262;
+      color: var(--color-gray-700);
     }
   }
 
@@ -22,7 +20,7 @@
     bottom: 30px;
     right: 30px;
     svg {
-      color: #333;
+      color: var(--color-black);
     }
   }
 
@@ -30,7 +28,7 @@
     bottom: 25px;
     right: 25px;
     svg {
-      color: #666;
+      color: var(--color-black);
     }
   }
 
@@ -38,7 +36,7 @@
     bottom: 20px;
     right: 20px;
     svg {
-      color: #000;
+      color: var(--color-black);
     }
   }
 }
