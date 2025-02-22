@@ -12,7 +12,7 @@ export function Technology() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <Title title={"Tecnologias & Habilidades"}/>
+      <Title title={"Tecnologias"}/>
       <div className={styles.grid}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
