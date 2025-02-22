@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import * as motion from "motion/react-client";
-
+import { FaGithub } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 export function ProjectCard({
   title,
   image,
@@ -28,10 +29,11 @@ export function ProjectCard({
           </span>
           <div className={styles.links}>
             <a target="_blank" rel="noopener noreferrer" href={repository}>
-              Repositório
+              Repositório <FaGithub />
             </a>
             <a target="_blank" rel="noopener noreferrer" href={preview}>
               Prévia
+              <FaExternalLinkAlt />
             </a>
           </div>
         </div>
