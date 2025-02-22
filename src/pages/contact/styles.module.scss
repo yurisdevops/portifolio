@@ -1,40 +1,79 @@
 .contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+  height: 100%;
+  max-height: 1000px;
+  background-color: #121212;
 }
 
-.header {
-    align-items: center;
-    font-size: 44px;
+.footer {
+  height: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: var(--color-gray-300);
+  h2 {
+    font-size: 20px;
+  }
+
+  span {
+    max-width: 700px;
+    line-height: 22px;
+  }
+}
+.phone {
+  text-decoration: none;
+  button {
+    font-size: 18px;
     display: flex;
-  
-    @media (max-width: 1600px) {
-      font-size: 36px;
-    }
-  
-    @media (max-width: 1024px) {
-      font-size: 32px;
-      gap: 1px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}
+
+.midias {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-gray-300);
+  cursor: pointer;
+}
+
+.namingRights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-300);
+  gap: 10px;
+
+  p {
+    display: flex;
+    gap: 5px;
+
+    a,
+    span {
+      text-decoration: none;
+      color: var(--color-orange);
     }
   }
-  
-  .blink {
-    animation: blink 1s infinite;
-  
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-  
+}

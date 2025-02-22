@@ -8,35 +8,26 @@
   z-index: 99;
 
   svg {
-    color: var(--color-black);
+    color: var(--color-orange);
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: var(--color-gray-700);
+      opacity: 90%;
     }
   }
 
   @media (max-width: 1600px) {
     bottom: 30px;
     right: 30px;
-    svg {
-      color: var(--color-black);
-    }
   }
 
   @media (max-width: 1024px) {
     bottom: 25px;
     right: 25px;
-    svg {
-      color: var(--color-black);
-    }
   }
 
   @media (max-width: 768px) {
     bottom: 20px;
     right: 20px;
-    svg {
-      color: var(--color-black);
-    }
   }
 }
