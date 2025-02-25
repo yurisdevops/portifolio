@@ -26,7 +26,7 @@
   display: grid;
   width: 80%;
   gap: 80px;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   align-items: stretch;
 
   @media (max-width: 1600px) {
