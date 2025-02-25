@@ -16,6 +16,7 @@ import projeto11 from "../../assets/images/projeto11.png";
 import projeto12 from "../../assets/images/projeto12.png";
 import dev from "../../assets/images/dev.jpg";
 import { Title } from "../../components/title";
+import { useSelector } from "react-redux";
 
 const projectCards = [
   {
@@ -130,15 +131,16 @@ const projectCards = [
 ];
 
 export function Projects() {
+  const darkMode = useSelector((state) => state.theme.darkMode);
   return (
     <motion.section
       id="projects"
-      className={styles.projects}
+      className={`${styles.projects}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <Title title="Projetos"/>
+      <Title title="Projetos" />
       <div className={styles.cardsContainer}>
         {projectCards.map((card) => (
           <ProjectCard key={card.title} {...card} />

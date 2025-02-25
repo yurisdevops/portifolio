@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
+import { useSelector } from "react-redux";
 
 const TextAnimation = () => {
   const texts = ["FRONT-END", "DESENVOLVEDOR WEB"];
@@ -10,6 +11,7 @@ const TextAnimation = () => {
 
   const [textIndex, setTextIndex] = useState(0);
 
+  const darkMode = useSelector((state) => state.theme.darkMode);
   useEffect(() => {
     const typingSpeed = 100; //
     const pauseBeforeDelete = 2000;
@@ -41,7 +43,9 @@ const TextAnimation = () => {
   }, [currentText, isDeleting, textIndex, texts]);
 
   return (
-    <div className={styles.textContainer}>
+    <div
+      className={`${styles.textContainer} ${darkMode ? styles.darkMode : ""}`}
+    >
       <span className={styles.text}>{currentText}</span>
       <span className={styles.cursor}>|</span>
     </div>

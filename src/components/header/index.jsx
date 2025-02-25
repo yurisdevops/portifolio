@@ -1,17 +1,26 @@
-import { useState } from "react"; // Importe o useState para controlar o estado do menu
-import { TiThMenuOutline } from "react-icons/ti"; // Importe o ícone
-import logo from "../../assets//logos/logo.png";
+import { useState } from "react";
+import { TiThMenuOutline } from "react-icons/ti";
+import logo from "../../assets/logos/logo.png";
 import styles from "./styles.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../../store/themeSlice";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const darkMode = useSelector((state) => state.theme.darkMode);
+  const dispatch = useDispatch();
+
+  function handleToggle() {
+    dispatch(toggleTheme());
+  }
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Alterna entre abrir e fechar o menu
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className={styles.main}>
+    <header className={`${styles.main} ${darkMode ? styles.darkMode : ""}`}>
       <div className={styles.logo}>
         <a href="/">
           <img src={logo} alt="Logo" />
@@ -19,8 +28,13 @@ export function Header() {
         </a>
       </div>
 
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <TiThMenuOutline size={24} color="#000" />
+      <div className={styles.hamburger}>
+        <button onClick={toggleMenu}>
+          <TiThMenuOutline className={styles.icon} />
+        </button>{" "}
+        <button onClick={handleToggle} className={styles.themeToggle}>
+          {darkMode ? <FaSun color="#fff" /> : <FaMoon />}
+        </button>
       </div>
 
       <nav className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
@@ -51,6 +65,13 @@ export function Header() {
             </a>
           </li>
         </ul>
+        {isMenuOpen ? (
+          <></>
+        ) : (
+          <button onClick={handleToggle} className={styles.themeToggle}>
+            {darkMode ? <FaSun color="#fff" /> : <FaMoon />}
+          </button>
+        )}
       </nav>
     </header>
   );

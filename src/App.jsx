@@ -1,24 +1,26 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import styles from "./styles.module.scss";
+import { Header } from "./components/header";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
-import { ScrollToTopButton } from "./components/scrollButton";
 import { Technology } from "./pages/technology";
 import { Projects } from "./pages/projects";
 import { Contact } from "./pages/contact";
+import { ScrollToTopButton } from "./components/scrollButton";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const darkMode = useSelector((state) => state.theme.darkMode);
 
   return (
-    <main className={styles.main}>
+    <div className={`${styles.main} ${darkMode ? styles.darkMode : ""}`}>
+      <Header />
       <Home />
       <About />
       <Technology />
       <Projects />
       <Contact />
       <ScrollToTopButton />
-    </main>
+    </div>
   );
 }
 

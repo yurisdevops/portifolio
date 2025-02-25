@@ -1,12 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-:root{
+:root {
+  --background: #f2f2f2;
+  --background-dark: #312e2e;
   --color-orange: #ff8c00;
-  --color-white: #fff
+  --color-white: #fff;
   --color-black: #121212;
+  --color-gray-900: #28292b;
   --color-gray-700: #293541;
   --color-gray-500: #536272;
   --color-gray-300: #94a0ac;
+  --color-gray-100: #9ca8b4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
 }
 
 * {
@@ -16,7 +23,6 @@
   outline: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f2f2f2;
+header {
+  background-color: var(--background);
 }

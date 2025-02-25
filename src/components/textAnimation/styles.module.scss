@@ -37,3 +37,12 @@
     opacity: 0;
   }
 }
+
+.textContainer.darkMode {
+  .text {
+    color: var(--color-white);
+  }
+  .cursor {
+    color: var(--color-orange);
+  }
+}

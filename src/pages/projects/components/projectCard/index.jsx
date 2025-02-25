@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import * as motion from "motion/react-client";
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useSelector } from "react-redux";
 export function ProjectCard({
   title,
   image,
@@ -9,13 +10,14 @@ export function ProjectCard({
   preview,
   technologies,
 }) {
+  const darkMode = useSelector((state) => state.theme.darkMode);
   return (
     <div className={styles.container}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className={styles.card}
+        className={`${styles.card} ${darkMode ? styles.darkMode : ""}`}
       >
         <div className={styles.img}>
           <img src={image} alt={title} />

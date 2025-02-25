@@ -2,10 +2,15 @@ import styles from "./styles.module.scss";
 import TextAnimation from "../../components/textAnimation";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 export function Home() {
+  const darkMode = useSelector((state) => state.theme.darkMode);
   return (
-    <section id="home" className={styles.home}>
+    <section
+      id="home"
+      className={`${styles.home} ${darkMode ? styles.darkMode : ""}`}
+    >
       <div className={styles.cta}>
         <div>
           <h2>Olá, eu sou o... </h2>
@@ -19,14 +24,14 @@ export function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={60} color="#000" />
+            <FaLinkedin className={styles.icon} />
           </a>
           <a
             href="https://github.com/yurisdevops"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithubSquare size={60} color="#000" />
+            <FaGithubSquare className={styles.icon} />
           </a>
         </div>
       </div>
