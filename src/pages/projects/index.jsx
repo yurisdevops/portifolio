@@ -33,7 +33,7 @@ const projectCards = [
     title: "Portifolio",
 
     image: projeto12,
-    technologies: "Vite, React, JavaScript, Sass.",
+    technologies: "Vite, React, JavaScript, Sass, Redux.",
 
     repository: "https://github.com/yurisdevops/portifolio",
     preview: "https://devyuri.vercel.app/",
