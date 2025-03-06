@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +86,7 @@
     font-size: 28px;
 
     strong {
-      font-size: 33px;
+      font-size: 28px;
       color: var(--color-orange);
     }
   }
