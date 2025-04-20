@@ -14,7 +14,7 @@ import projeto9 from "../../assets/images/projeto9.png";
 import projeto10 from "../../assets/images/projeto10.png";
 import projeto11 from "../../assets/images/projeto11.png";
 import projeto12 from "../../assets/images/projeto12.png";
-import projeto13 from "../../assets/images/projeto13.jpg";
+import projeto13 from "../../assets/images/projeto13.png";
 import { Title } from "../../components/title";
 import { useSelector } from "react-redux";
 
