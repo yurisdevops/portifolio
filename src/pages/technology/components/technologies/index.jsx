@@ -12,6 +12,9 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaSass } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { SiExpo } from "react-icons/si";
+import { SiCloudinary } from "react-icons/si";
+import { SiJsonwebtokens } from "react-icons/si";
 
 export function Technologies() {
   return (
@@ -67,6 +70,18 @@ export function Technologies() {
       <div>
         <FaGithubSquare className={styles.icon} />
         <p>GitHub</p>
+      </div>
+      <div>
+        <SiExpo className={styles.icon} />
+        <p>Expo</p>
+      </div>
+      <div>
+        <SiCloudinary className={styles.icon} />
+        <p>Cloudinary</p>
+      </div>
+      <div>
+        <SiJsonwebtokens className={styles.icon} />
+        <p>JWT</p>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const projectCards = [
     technologies: "Vite, React, JavaScript, Sass, Redux.",
 
     repository: "https://github.com/yurisdevops/portifolio",
-    preview: "https://devyuri.vercel.app/",
+    preview: "https://portfolio-one-ruddy-53.vercel.app/",
   },
   {
     title: "Desafio (teste)",
