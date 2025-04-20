@@ -14,7 +14,7 @@ import projeto9 from "../../assets/images/projeto9.png";
 import projeto10 from "../../assets/images/projeto10.png";
 import projeto11 from "../../assets/images/projeto11.png";
 import projeto12 from "../../assets/images/projeto12.png";
-import dev from "../../assets/images/dev.jpg";
+import projeto13 from "../../assets/images/projeto13.jpg";
 import { Title } from "../../components/title";
 import { useSelector } from "react-redux";
 
@@ -22,12 +22,12 @@ const projectCards = [
   {
     title: "PizzaManager",
 
-    image: dev,
+    image: projeto13,
     technologies:
       "React, Next.Js, TypeScript, Sass, NodeJs, Express, PostgreSQL",
 
-    repository: "https://devyuri.vercel.app/",
-    preview: "https://devyuri.vercel.app/",
+    repository: "https://github.com/yurisdevops/pizzamanager",
+    preview: "https://pizzamanager.vercel.app/",
   },
   {
     title: "Portifolio",
