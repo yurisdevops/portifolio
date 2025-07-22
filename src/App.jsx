@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { Header } from "./components/Header/Header";
 import { ScrollToTopButton } from "./components/ScrollButton/ScrollButton";
 import { About } from "./pages/about";
-import { Contact } from "./pages/Contact/";
+import { Contact } from "./pages/contact";
 import { Home } from "./pages/home";
 import { Projects } from "./pages/projects";
 import { Technology } from "./pages/technology";
