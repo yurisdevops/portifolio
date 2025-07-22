@@ -1,5 +1,5 @@
-import styles from "./styles.module.scss";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import styles from "./ScrollButton.module.scss";
 
 export function ScrollToTopButton() {
   const scrollToTop = () => {

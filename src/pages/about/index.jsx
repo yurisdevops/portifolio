@@ -1,7 +1,6 @@
-import styles from "./styles.module.scss";
-import profile from "../../assets/logos/profile.jpg";
 import * as motion from "motion/react-client";
-import { Title } from "../../components/title";
+import { Title } from "../../components/Title/Title";
+import styles from "./styles.module.scss";
 
 export function About() {
   return (
@@ -12,7 +11,7 @@ export function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <Title title={"Sobre"}/>
+      <Title title={"Sobre"} />
 
       <div className={styles.grid}>
         <motion.div
@@ -21,7 +20,7 @@ export function About() {
           transition={{ duration: 1 }}
           className={styles.img}
         >
-          <img src={profile} alt="" />
+          <img src="../images/profile.webp" alt="Foto de Perfil" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -29,32 +28,29 @@ export function About() {
           transition={{ duration: 1 }}
           className={styles.text}
         >
-          {" "}
           <p>
-            {" "}
-            Eu me chamo <strong>Yuri</strong>, tenho 30 anos e sou casado com a{" "}
-            <strong>Thaiza</strong>.{" "}
-          </p>{" "}
+            Eu me chamo <strong>Yuri</strong>, tenho 30 anos e sou casado com a
+            <strong> Thaiza</strong>.
+          </p>
           <p>
-            {" "}
-            Sou um <strong>Desenvolvedor Front-End</strong> recém-formado em{" "}
-            <strong>Análise e Desenvolvimento de Sistemas</strong> apaixonado
-            por programação de softwares.{" "}
-          </p>{" "}
+            Sou um <strong>Desenvolvedor Front-End</strong> recém-formado em
+            <strong> Análise e Desenvolvimento de Sistemas</strong> apaixonado
+            por programação de softwares.
+          </p>
           <p>
-            {" "}
             Em minha trajetória profissional, sempre atuei diretamente com o
             setor de tecnologia. Por anos, fui técnico de sistemas de segurança
             eletrônica com cargo de liderança na empresa. Hoje, atuo como
             técnico em informática na área de suporte técnico, lidando com
             problemas de rede, software e hardware. Mesmo com essas obrigações,
             venho me aperfeiçoando dia após dia como desenvolvedor, me
-            especializando ainda mais nas tecnologias, tais como:{" "}
+            especializando ainda mais nas tecnologias, tais como:
             <strong>
+              {" "}
               React, JavaScript, TypeScript, Tailwind CSS, Sass, Next.js,
-              Node.js, MongoDB, Firebase e entre outras.{" "}
-            </strong>{" "}
-          </p>{" "}
+              Node.js, MongoDB, Firebase e entre outras.
+            </strong>
+          </p>
         </motion.div>
       </div>
     </motion.section>

@@ -1,8 +1,7 @@
-import styles from "./styles.module.scss";
 import * as motion from "motion/react-client";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import styles from "./styles.module.scss";
 
 export function Contact() {
   return (

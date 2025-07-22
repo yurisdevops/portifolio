@@ -1,8 +1,7 @@
-import styles from "./styles.module.scss";
-import TextAnimation from "../../components/textAnimation";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import TextAnimation from "../../components/TextAnimation/TextAnimation";
+import styles from "./styles.module.scss";
 
 export function Home() {
   const darkMode = useSelector((state) => state.theme.darkMode);

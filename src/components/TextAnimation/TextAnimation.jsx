@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import styles from "./styles.module.scss";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import styles from "./TextAnimation.module.scss";
 
 const TextAnimation = () => {
   const texts = ["FRONT-END", "DESENVOLVEDOR WEB"];
@@ -12,6 +12,7 @@ const TextAnimation = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   const darkMode = useSelector((state) => state.theme.darkMode);
+  
   useEffect(() => {
     const typingSpeed = 100; //
     const pauseBeforeDelete = 2000;

@@ -1,8 +1,8 @@
-import styles from "./styles.module.scss";
 import * as motion from "motion/react-client";
-import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import { useSelector } from "react-redux";
+import styles from "./styles.module.scss";
 export function ProjectCard({
   title,
   image,

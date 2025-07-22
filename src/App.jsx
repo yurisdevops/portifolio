@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux";
-import styles from "./styles.module.scss";
-import { Header } from "./components/header";
-import { Home } from "./pages/home";
+import { Header } from "./components/Header/Header";
+import { ScrollToTopButton } from "./components/ScrollButton/ScrollButton";
 import { About } from "./pages/about";
-import { Technology } from "./pages/technology";
+import { Contact } from "./pages/Contact/";
+import { Home } from "./pages/home";
 import { Projects } from "./pages/projects";
-import { Contact } from "./pages/contact";
-import { ScrollToTopButton } from "./components/scrollButton";
+import { Technology } from "./pages/technology";
+import styles from "./styles.module.scss";
 
 function App() {
   const darkMode = useSelector((state) => state.theme.darkMode);

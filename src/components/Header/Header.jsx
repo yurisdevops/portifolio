@@ -1,10 +1,9 @@
 import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { TiThMenuOutline } from "react-icons/ti";
-import logo from "../../assets/logos/logo.png";
-import styles from "./styles.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../store/themeSlice";
-import { FaMoon, FaSun } from "react-icons/fa";
+import styles from "./Header.module.scss";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +22,7 @@ export function Header() {
     <header className={`${styles.main} ${darkMode ? styles.darkMode : ""}`}>
       <div className={styles.logo}>
         <a href="/">
-          <img src={logo} alt="Logo" />
+          <img src="../images/logo.webp" alt="Logo" />
           <h1>YURI</h1>
         </a>
       </div>
