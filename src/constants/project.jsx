@@ -1,5 +1,13 @@
 export const dataProjects = [
   {
+    title: "Skolaris",
+    image: "/images/projeto14.png",
+    technologies: "React, Vite, TypeScript, Sass, Firebase",
+
+    repository: "https://github.com/yurisdevops/skolaris",
+    preview: "https://devyuri.vercel.app",
+  },
+  {
     title: "PizzaManager",
     image: "/images/projeto13.png",
     technologies:
