@@ -3,6 +3,13 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import styles from "./styles.module.scss";
 
+const WHATSAPP_NUMBER = "5521990352415";
+const WHATSAPP_MESSAGE =
+  "Olá, Yuri! Vi seu portfólio e gostaria de conversar sobre um projeto.";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  WHATSAPP_MESSAGE
+)}`;
+
 export function Contact() {
   return (
     <motion.footer
@@ -23,8 +30,9 @@ export function Contact() {
           </span>
           <a
             className={styles.phone}
-            href="https://wa.me/5521990352415"
+            href={whatsappUrl}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <button>
               <FaWhatsapp color="#008000" size={24} /> Fale comigo!
