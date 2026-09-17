@@ -33,10 +33,12 @@ export function ProjectCard({
             <a target="_blank" rel="noopener noreferrer" href={repository}>
               Repositório <FaGithub />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href={preview}>
-              Prévia
-              <FaExternalLinkAlt />
-            </a>
+            {preview && (
+              <a target="_blank" rel="noopener noreferrer" href={preview}>
+                Prévia
+                <FaExternalLinkAlt />
+              </a>
+            )}
           </div>
         </div>
       </motion.div>

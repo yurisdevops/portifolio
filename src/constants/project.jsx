@@ -5,7 +5,7 @@ export const dataProjects = [
     technologies: "React, Vite, TypeScript, Sass, Firebase",
 
     repository: "https://github.com/yurisdevops/skolaris",
-    preview: "https://devyuri.vercel.app",
+    preview: "",
   },
   {
     title: "PizzaManager",
@@ -17,16 +17,7 @@ export const dataProjects = [
     preview: "https://pizzamanager.vercel.app/",
   },
   {
-    title: "Portifolio",
-    image: "/images/projeto12.png",
-    technologies: "Vite, React, JavaScript, Sass, Redux.",
-
-    repository: "https://github.com/yurisdevops/portifolio",
-    preview: "https://portfolio-one-ruddy-53.vercel.app/",
-  },
-  {
-    title: "Desafio (teste)",
-
+    title: "Sistema de Cadastro (Desafio Técnico)",
     image: "/images/projeto11.png",
     technologies:
       "Vite, React, TypeScript, Tailwind CSS, NodeJs, Express, SQLite (Online Render.com)",

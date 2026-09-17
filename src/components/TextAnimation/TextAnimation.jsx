@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import styles from "./TextAnimation.module.scss";
 
-const TextAnimation = () => {
-  const texts = ["FRONT-END", "DESENVOLVEDOR WEB"];
+const texts = ["FRONT-END", "DESENVOLVEDOR WEB"];
 
+const TextAnimation = () => {
   const [currentText, setCurrentText] = useState("");
 
   const [isDeleting, setIsDeleting] = useState(false);
@@ -41,7 +41,7 @@ const TextAnimation = () => {
 
       return () => clearTimeout(timer);
     }
-  }, [currentText, isDeleting, textIndex, texts]);
+  }, [currentText, isDeleting, textIndex]);
 
   return (
     <div
