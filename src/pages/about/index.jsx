@@ -29,27 +29,21 @@ export function About() {
           className={styles.text}
         >
           <p>
-            Eu me chamo <strong>Yuri</strong>, tenho 30 anos e sou casado com a
-            <strong> Thaiza</strong>.
+            Sou o <strong>Yuri</strong>, desenvolvedor front-end formado em
+            <strong> Análise e Desenvolvimento de Sistemas</strong>, no Rio de Janeiro.
           </p>
           <p>
-            Sou um <strong>Desenvolvedor Front-End</strong> recém-formado em
-            <strong> Análise e Desenvolvimento de Sistemas</strong> apaixonado
-            por programação de softwares.
+            Antes de programar, passei anos como técnico de sistemas de segurança
+            eletrônica, em cargo de liderança. Hoje atuo como
+            <strong> técnico de campo</strong>, resolvendo problemas de rede, hardware
+            e software direto com o cliente. Essa rotina me ensinou a entender o que a
+            pessoa realmente precisa, explicar soluções técnicas sem complicar e cumprir
+            o que foi combinado.
           </p>
           <p>
-            Em minha trajetória profissional, sempre atuei diretamente com o
-            setor de tecnologia. Por anos, fui técnico de sistemas de segurança
-            eletrônica com cargo de liderança na empresa. Hoje, atuo como
-            técnico em informática na área de suporte técnico, lidando com
-            problemas de rede, software e hardware. Mesmo com essas obrigações,
-            venho me aperfeiçoando dia após dia como desenvolvedor, me
-            especializando ainda mais nas tecnologias, tais como:
-            <strong>
-              {" "}
-              React, JavaScript, TypeScript, Tailwind CSS, Sass, Next.js,
-              Node.js, MongoDB, Firebase e entre outras.
-            </strong>
+            No desenvolvimento, crio sites e aplicações com
+            <strong> React, TypeScript, Next.js e Node.js</strong>, e também desenvolvo
+            o <strong>Telos</strong>, um aplicativo de treino em React Native.
           </p>
         </motion.div>
       </div>
